@@ -1,0 +1,63 @@
+{
+ "week":[
+ 
+ 	{
+		"emp_name": "google",
+		"hora": ["1:35 PM","2:35 PM", "4:45 PM"],
+		"day": "Monday",
+		"job_profile": "developer",
+		"email": "emanuel@usp.br",
+		"genero": [],
+		"phone": []
+	},
+	{
+		"emp_name": "itau",
+		"hora": ["2:30 PM", "11:45 PM"],
+		"day": "Tuesday",
+		"job_profile": "developer",
+		"email": "emanuel@usp.br",
+		"genero":[],
+		"phone": []
+
+	},
+	{
+		"emp_name": "Volkswagen",
+		"hora": [],
+		"day": "Wednesday",
+		"job_profile": "developer",
+		"email": "emanuel@usp.br",	
+		"phone": [],
+		"genero":[]
+	},
+ 	{
+		"emp_name": "Volkswagen",
+		"hora": null,
+		"day": "Thursday",
+		"job_profile": "developer",
+		"email": "emanuel@usp.br",	
+		"phone": [],
+		"genero":[]
+	},
+		{
+		"emp_name": "Volkswagen",
+		"hora": null,
+		"day": "Friday",
+		"job_profile": "developer",
+		"email": "emanuel@usp.br",	
+		"phone": [],
+		"genero":[]
+	},
+	{
+		"emp_name": "Volkswagen",
+		"hora": ["9:44 PM","7:00 AM", "8:45 AM", "9:45 PM"],
+		"day": "Saturday",
+		"job_profile": "developer",
+		"email": "emanuel@usp.br",	
+		"phone": [],
+		"genero":[]
+	}
+
+ ]
+	
+
+}
