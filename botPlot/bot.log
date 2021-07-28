@@ -1,0 +1,456 @@
+2021-07-28 16:46:59,365 [INFO] Scheduler started
+2021-07-28 16:47:00,279 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 16:47:04,831 [ERROR] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2021-07-28 16:47:04,831 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2021-07-28 16:47:10,875 [ERROR] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2021-07-28 16:47:10,876 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2021-07-28 16:47:18,074 [ERROR] Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2021-07-28 16:47:18,075 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/updater.py", line 597, in polling_action_cb
+    updates = self.bot.get_updates(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/extbot.py", line 222, in get_updates
+    updates = super().get_updates(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 2861, in get_updates
+    self._post(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/bot.py", line 295, in _post
+    return self.request.post(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/utils/request.py", line 356, in post
+    result = self._request_wrapper(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/utils/request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2021-07-28 16:47:20,324 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 16:47:20,325 [INFO] Scheduler has been shut down
+2021-07-28 16:47:53,736 [INFO] Scheduler started
+2021-07-28 16:47:54,636 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 16:48:32,540 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+TypeError: plot_table() takes 0 positional arguments but 2 were given
+2021-07-28 16:49:31,746 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 16:49:31,746 [INFO] Scheduler has been shut down
+2021-07-28 16:49:36,448 [INFO] Scheduler started
+2021-07-28 16:49:37,324 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 16:49:41,221 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+TypeError: plot_table_nosso() takes 0 positional arguments but 2 were given
+2021-07-28 16:50:02,912 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 16:50:02,913 [INFO] Scheduler has been shut down
+2021-07-28 16:50:15,257 [INFO] Scheduler started
+2021-07-28 16:50:16,088 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 16:52:59,950 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 16:52:59,951 [INFO] Scheduler has been shut down
+2021-07-28 16:58:15,702 [INFO] Scheduler started
+2021-07-28 16:58:16,585 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 16:58:26,115 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 97, in plot_table_nosso
+    horarioInicial = datetime.datetime(hour=int(data['nao_antes'].split(":")[0]),minute=int(data['nao_antes'].split(":")[1]))
+TypeError: function missing required argument 'year' (pos 1)
+2021-07-28 16:59:21,322 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 16:59:21,323 [INFO] Scheduler has been shut down
+2021-07-28 16:59:52,253 [INFO] Scheduler started
+2021-07-28 16:59:53,182 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:06:10,080 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:06:10,091 [INFO] Scheduler has been shut down
+2021-07-28 17:06:10,230 [WARNING] Exiting immediately!
+2021-07-28 17:06:14,091 [INFO] Scheduler started
+2021-07-28 17:06:14,971 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:11:28,074 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:11:28,074 [INFO] Scheduler has been shut down
+2021-07-28 17:13:47,818 [INFO] Scheduler started
+2021-07-28 17:13:48,713 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:13:56,943 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 116, in plot_table_nosso
+    data[column][row] = 0
+IndexError: list assignment index out of range
+2021-07-28 17:15:27,393 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:15:27,394 [INFO] Scheduler has been shut down
+2021-07-28 17:15:35,723 [INFO] Scheduler started
+2021-07-28 17:15:36,625 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:15:40,985 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 116, in plot_table_nosso
+    data[column][row] = 0
+IndexError: list assignment index out of range
+2021-07-28 17:15:51,102 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:15:51,103 [INFO] Scheduler has been shut down
+2021-07-28 17:15:53,832 [INFO] Scheduler started
+2021-07-28 17:15:54,663 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:15:58,323 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 118, in plot_table_nosso
+    dataFrame[column].append(datarow)
+IndexError: list index out of range
+2021-07-28 17:18:13,015 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:18:13,016 [INFO] Scheduler has been shut down
+2021-07-28 17:18:57,919 [INFO] Scheduler started
+2021-07-28 17:18:58,896 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:19:16,931 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:19:16,931 [INFO] Scheduler has been shut down
+2021-07-28 17:19:21,132 [WARNING] Exiting immediately!
+2021-07-28 17:19:23,279 [INFO] Scheduler started
+2021-07-28 17:19:24,108 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:20:19,111 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:20:19,112 [INFO] Scheduler has been shut down
+2021-07-28 17:24:04,686 [INFO] Scheduler started
+2021-07-28 17:24:05,822 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:29:59,358 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:29:59,358 [INFO] Scheduler has been shut down
+2021-07-28 17:30:11,347 [INFO] Scheduler started
+2021-07-28 17:30:12,286 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:36:59,833 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:36:59,833 [INFO] Scheduler has been shut down
+2021-07-28 17:37:29,351 [INFO] Scheduler started
+2021-07-28 17:37:30,229 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:43:50,625 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:43:50,625 [INFO] Scheduler has been shut down
+2021-07-28 17:43:59,897 [INFO] Scheduler started
+2021-07-28 17:44:00,790 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:44:14,796 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 138, in plot_table_nosso
+    ytable = plt.table(cellText=dataFrame, rowLabels=rows, colLabels=columns,
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/pyplot.py", line 3177, in table
+    return gca().table(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 799, in table
+    width=colWidths[col], height=height,
+IndexError: list index out of range
+2021-07-28 17:46:03,641 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:46:03,641 [INFO] Scheduler has been shut down
+2021-07-28 17:46:17,635 [INFO] Scheduler started
+2021-07-28 17:46:18,522 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:46:27,136 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 139, in plot_table_nosso
+    ytable = plt.table(cellText=dataFrame, rowLabels=rows, colLabels=columns,
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/pyplot.py", line 3177, in table
+    return gca().table(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 799, in table
+    width=colWidths[col], height=height,
+IndexError: list index out of range
+2021-07-28 17:46:48,449 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:46:48,450 [INFO] Scheduler has been shut down
+2021-07-28 17:49:59,622 [INFO] Scheduler started
+2021-07-28 17:50:00,501 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:52:27,121 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:52:27,123 [INFO] Scheduler has been shut down
+2021-07-28 17:52:33,353 [INFO] Scheduler started
+2021-07-28 17:52:34,358 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:52:58,866 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:52:58,866 [INFO] Scheduler has been shut down
+2021-07-28 17:53:04,140 [INFO] Scheduler started
+2021-07-28 17:53:05,015 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:53:31,329 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:53:31,330 [INFO] Scheduler has been shut down
+2021-07-28 17:53:40,585 [INFO] Scheduler started
+2021-07-28 17:53:41,456 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:54:40,824 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:54:40,824 [INFO] Scheduler has been shut down
+2021-07-28 17:54:45,763 [INFO] Scheduler started
+2021-07-28 17:54:46,642 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:55:13,395 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:55:13,396 [INFO] Scheduler has been shut down
+2021-07-28 17:55:17,894 [INFO] Scheduler started
+2021-07-28 17:55:18,777 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:55:56,890 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:55:56,891 [INFO] Scheduler has been shut down
+2021-07-28 17:56:28,150 [INFO] Scheduler started
+2021-07-28 17:56:29,037 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 17:57:32,994 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 17:57:32,994 [INFO] Scheduler has been shut down
+2021-07-28 17:57:38,455 [INFO] Scheduler started
+2021-07-28 17:57:39,339 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:04:36,742 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:04:36,742 [INFO] Scheduler has been shut down
+2021-07-28 18:04:47,100 [INFO] Scheduler started
+2021-07-28 18:04:47,976 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:04:56,153 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 145, in plot_table_nosso
+    tab = ax.table(cellText=dataFrame, rowLabels=rows, colLabels=columns, loc='center',rowColours=colors)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 816, in table
+    text=rowLabels[row], facecolor=rowColours[row],
+IndexError: index 2 is out of bounds for axis 0 with size 2
+2021-07-28 18:05:12,167 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:05:12,167 [INFO] Scheduler has been shut down
+2021-07-28 18:05:19,647 [INFO] Scheduler started
+2021-07-28 18:05:20,480 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:06:06,319 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:06:06,319 [INFO] Scheduler has been shut down
+2021-07-28 18:06:21,182 [INFO] Scheduler started
+2021-07-28 18:06:22,056 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:06:32,546 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 146, in plot_table_nosso
+    tab[4,5].set_facecolor("56b5fd")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 359, in __getitem__
+    return self._cells[position]
+KeyError: (4, 5)
+2021-07-28 18:06:58,891 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:06:58,892 [INFO] Scheduler has been shut down
+2021-07-28 18:07:06,405 [INFO] Scheduler started
+2021-07-28 18:07:07,283 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:07:12,407 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 146, in plot_table_nosso
+    tab[(4,5)].set_facecolor("#56b5fd")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 359, in __getitem__
+    return self._cells[position]
+KeyError: (4, 5)
+2021-07-28 18:08:04,909 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:08:04,910 [INFO] Scheduler has been shut down
+2021-07-28 18:08:17,533 [INFO] Scheduler started
+2021-07-28 18:08:18,424 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:08:21,152 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 146, in plot_table_nosso
+    tab.get_celld()[(4,5)].set_facecolor("#56b5fd")
+KeyError: (4, 5)
+2021-07-28 18:12:31,033 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:12:31,034 [INFO] Scheduler has been shut down
+2021-07-28 18:12:39,132 [INFO] Scheduler started
+2021-07-28 18:12:40,030 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:13:42,208 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:13:42,209 [INFO] Scheduler has been shut down
+2021-07-28 18:13:52,420 [INFO] Scheduler started
+2021-07-28 18:13:53,295 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:55:03,431 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:55:03,431 [INFO] Scheduler has been shut down
+2021-07-28 18:55:32,400 [INFO] Scheduler started
+2021-07-28 18:55:33,277 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:55:54,559 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 138, in plot_table_nosso
+    for diasDisponiveisPessoa in pessoa["horas dosponiveis"]:
+KeyError: 'horas dosponiveis'
+2021-07-28 18:56:08,520 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:56:08,521 [INFO] Scheduler has been shut down
+2021-07-28 18:56:18,534 [INFO] Scheduler started
+2021-07-28 18:56:19,371 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:56:25,575 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 142, in plot_table_nosso
+    if match( diasDisponiveisPessoa["dia"],horaDisponivel,columns[dia],row[horario]):
+TypeError: 'int' object is not subscriptable
+2021-07-28 18:57:34,076 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 18:57:34,076 [INFO] Scheduler has been shut down
+2021-07-28 18:57:40,519 [INFO] Scheduler started
+2021-07-28 18:57:41,410 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 18:57:47,976 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 143, in plot_table_nosso
+    print(diasDisponiveisPessoa["dia"],horaDisponivel,columns[dia],row[horario])
+TypeError: 'int' object is not subscriptable
+2021-07-28 19:02:44,503 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:02:44,503 [INFO] Scheduler has been shut down
+2021-07-28 19:02:51,818 [WARNING] Exiting immediately!
+2021-07-28 19:02:54,645 [INFO] Scheduler started
+2021-07-28 19:02:55,527 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:02:59,443 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 132, in plot_table_nosso
+    datarow[row].append(0)
+TypeError: list indices must be integers or slices, not str
+2021-07-28 19:03:38,155 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:03:38,158 [INFO] Scheduler has been shut down
+2021-07-28 19:03:43,969 [INFO] Scheduler started
+2021-07-28 19:03:44,851 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:03:49,520 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 132, in plot_table_nosso
+    datarow[row].append(0)
+KeyError: '09:00:00'
+2021-07-28 19:04:42,537 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:04:42,537 [INFO] Scheduler has been shut down
+2021-07-28 19:04:58,592 [INFO] Scheduler started
+2021-07-28 19:04:59,466 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:05:01,453 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 133, in plot_table_nosso
+    dataFrame[colum].append(datarow)
+KeyError: 'SEG'
+2021-07-28 19:07:44,754 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:07:44,754 [INFO] Scheduler has been shut down
+2021-07-28 19:07:47,678 [INFO] Scheduler started
+2021-07-28 19:07:48,557 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:07:54,027 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 170, in plot_table_nosso
+    tab = ax.table(cellText=dataFrame, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 741, in table
+    cols = len(cellText[0])
+KeyError: 0
+2021-07-28 19:08:36,348 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:08:36,348 [INFO] Scheduler has been shut down
+2021-07-28 19:09:38,502 [INFO] Scheduler started
+2021-07-28 19:09:39,385 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:09:47,830 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 132, in plot_table_nosso
+    datarow[row] = 0
+TypeError: list indices must be integers or slices, not str
+2021-07-28 19:10:04,152 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:10:04,152 [INFO] Scheduler has been shut down
+2021-07-28 19:10:10,279 [INFO] Scheduler started
+2021-07-28 19:10:11,159 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:10:18,099 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 170, in plot_table_nosso
+    tab = ax.table(cellText=dataFrame, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 741, in table
+    cols = len(cellText[0])
+KeyError: 0
+2021-07-28 19:12:09,669 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:12:09,669 [INFO] Scheduler has been shut down
+2021-07-28 19:12:13,925 [INFO] Scheduler started
+2021-07-28 19:12:14,814 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:12:17,739 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 173, in plot_table_nosso
+    tab = ax.table(cellText=dataFrame, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 741, in table
+    cols = len(cellText[0])
+KeyError: 0
+2021-07-28 19:20:53,361 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:20:53,361 [INFO] Scheduler has been shut down
+2021-07-28 19:21:15,296 [INFO] Scheduler started
+2021-07-28 19:21:16,181 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:21:23,191 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 149, in plot_table_nosso
+    df2.append(dfRow.values())
+AttributeError: 'str' object has no attribute 'values'
