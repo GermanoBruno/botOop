@@ -648,3 +648,24 @@ Traceback (most recent call last):
   File "006bot.py", line 149, in plot_table_nosso
     df2.append(dfRow.values())
 AttributeError: 'str' object has no attribute 'values'
+2021-07-28 20:01:07,288 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 20:01:07,288 [INFO] Scheduler has been shut down
+2021-07-28 20:01:10,759 [WARNING] Exiting immediately!
+2021-07-28 20:01:14,086 [INFO] Scheduler started
+2021-07-28 20:01:14,975 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 20:01:19,916 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 142, in plot_table_nosso
+    dataFrame[diasDisponiveisPessoa["dia"]][horaDisponivel] += 1
+KeyError: 'SEG'
+2021-07-28 20:01:55,581 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 20:01:55,581 [INFO] Scheduler has been shut down
+2021-07-28 20:01:55,732 [WARNING] Exiting immediately!
+2021-07-28 20:01:57,981 [INFO] Scheduler started
+2021-07-28 20:01:58,855 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 20:02:08,989 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 20:02:08,991 [INFO] Scheduler has been shut down

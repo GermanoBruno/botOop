@@ -128,8 +128,9 @@ def plot_table_nosso(update, context):
     pessoas = data["pessoas"]
 
    
-    for row in rows:
-        for colum in columns:
+
+    for colum in columns:
+        for row in rows:
             datarow[row] = 0
         dataFrame[colum] = datarow
         datarow = {}
