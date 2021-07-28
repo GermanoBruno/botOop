@@ -127,128 +127,57 @@ def plot_table_nosso(update, context):
 
     pessoas = data["pessoas"]
 
-    for colum in columns:
-        for row in rows:
+   
+    for row in rows:
+        for colum in columns:
             datarow[row] = 0
         dataFrame[colum] = datarow
         datarow = {}
 
-    # print(dataFrame)
+    print(dataFrame)
 
     for pessoa in pessoas:
         for diasDisponiveisPessoa in pessoa["horas_dosponiveis"]:
             for horaDisponivel in  diasDisponiveisPessoa["horarios"]:
                 dataFrame[diasDisponiveisPessoa["dia"]][horaDisponivel] += 1
 
-    # print(dataFrame)
+    print(dataFrame)
 
-
+    
     df2 = []
+    df2_row = []
+
+
 
     for dfRow in dataFrame:
-        df2.append(dfRow.values())
+        for item in dataFrame[dfRow]:
+            df2_row.append(str(dataFrame[dfRow][item]))
+        df2.append(df2_row)
+        df2_row = []
 
     print(df2)
-    
-    
-    
-
-    # the_table = plt.table(cellText=dataFrame,
-    #                       rowLabels=rows,
-    #                       colLabels=columns,
-    #                       loc='top')
-
-    # colors = plt.cm.BuPu(np.linspace(0,0.5,len(columns)))
-    fig, ax = plt.subplots(figsize=(8, 8))
-
-    # hide axes
-    fig.patch.set_visible(False)
-    ax.axis('off')
-    
-
-    tab = ax.table(cellText=dataFrame, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
-    tab.get_celld()[(1,1)].set_color("#56b5fd")
-    # [t.auto_set_font_size(False) for t in tab]
-    # tab.auto_set_column_width(col=)
-    
-    
-    # fig.tight_layout()
-
-    plt.savefig('graph001.png')
-    _file.close()
-    # plt.table()
-
-
-
-    # columns = ('SEG', 'TER', 'QUA', 'QUI', 'SEX','SAB','')
-    # rows = [x['nome'] for x in data['pessoas']]
-
-
-    # values = np.arange(8,18,0.30)
-
-
-
-    # colors = plt.cm.BuPu(np.linspace(0,0.5,len(rows)))
-
-    # index = np.arange(len(columns))
-    # bar_width = 0.4
-    
-    # y_offset = np.zeros(len(columns))
-
-    # print(columns)
-    # print(rows)
-    # print(values)
-    # x = 0
-    # for row1 in data['pessoas']:
-    #     print(x)
-
-    #     for row2 in row1['horas_disponiveis']:
-        
-    #         #print(y_offset)
-    #         #k = row2['horarios']
-    #         #print(float_date(k[0]))
-    #         #y_offset[x] = y_offset[x] + float_date(k[0])
-
-            
-    #         if(row2['dia'] == 'SEG'):
-    #             plt.bar(0,row2['horarios'],bar_width,bottom=y_offset,color= colors[x])
-    #             k = row2['horarios']
-    #             y_offset[x] = y_offset[x] + float_date(k[0])
-        
-    #         if(row2['dia'] == 'TER'):
-    #             plt.bar(1,row2['horarios'],bar_width,bottom=y_offset,color= colors[x])
-    #             k = row2['horarios']
-    #             y_offset[x] = y_offset[x] + float_date(k[0])
-
-    #         if(row2['dia'] == 'QUA'):
-    #             plt.bar(2,row2['horarios'],bar_width,bottom=y_offset,color= colors[x])
-    #             k = row2['horarios']
-    #             y_offset[x] = y_offset[x] + float_date(k[0])
-
-    #         if(row2['dia'] == 'QUI'):
-    #             plt.bar(4,row2['horarios'],bar_width,bottom=y_offset,color= colors[x])
-    #             k = row2['horarios']
-    #             y_offset[x] = y_offset[x] + float_date(k[0])
-
-        
-    #         if(row2['dia'] == 'SEX'):
-    #             plt.bar(5,row2['horarios'],bar_width,bottom=y_offset,color= colors[x])
-    #             k = row2['horarios']
-    #             y_offset[x] = y_offset[x] + float_date(k[0])
- 
-    #         if(row2['dia'] == 'SAB'):
-    #             plt.bar(6,row2['horarios'],bar_width,bottom=y_offset,color= colors[x])
-    #             k = row2['horarios']
-    #             y_offset[x] = y_offset[x] + float_date(k[0])
-
- 
-    #         x +=1
 
     
-    # plt.yticks([val for val in values])
-    # plt.xticks(index,columns)           
+    
+    
+    # fig, ax = plt.subplots(figsize=(8, 8))
+
+    # # hide axes
+    # fig.patch.set_visible(False)
+    # ax.axis('off')
+    
+
+    # tab = ax.table(cellText=df2, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+    # tab.get_celld()[(1,1)].set_color("#56b5fd")
+    # # [t.auto_set_font_size(False) for t in tab]
+    # # tab.auto_set_column_width(col=)
+    
+    
+    # # fig.tight_layout()
+
     # plt.savefig('graph001.png')
-    # _file.close()
+    _file.close()
+ 
 
     pass
 

@@ -454,3 +454,197 @@ Traceback (most recent call last):
   File "006bot.py", line 149, in plot_table_nosso
     df2.append(dfRow.values())
 AttributeError: 'str' object has no attribute 'values'
+2021-07-28 19:29:50,970 [INFO] Scheduler started
+2021-07-28 19:29:51,849 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:29:57,310 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 162, in plot_table_nosso
+    tab = ax.table(cellText=dataFrame, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 741, in table
+    cols = len(cellText[0])
+KeyError: 0
+2021-07-28 19:33:18,536 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:33:18,536 [INFO] Scheduler has been shut down
+2021-07-28 19:33:38,863 [INFO] Scheduler started
+2021-07-28 19:33:39,752 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:33:46,891 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 162, in plot_table_nosso
+    tab = ax.table(cellText=dataFrame, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 741, in table
+    cols = len(cellText[0])
+KeyError: 0
+2021-07-28 19:35:03,209 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:35:03,210 [INFO] Scheduler has been shut down
+2021-07-28 19:35:13,064 [INFO] Scheduler started
+2021-07-28 19:35:13,955 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:36:30,819 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:36:30,819 [INFO] Scheduler has been shut down
+2021-07-28 19:36:31,042 [WARNING] Exiting immediately!
+2021-07-28 19:36:36,843 [INFO] Scheduler started
+2021-07-28 19:36:37,833 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:38:23,786 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:38:23,787 [INFO] Scheduler has been shut down
+2021-07-28 19:38:31,287 [WARNING] Exiting immediately!
+2021-07-28 19:38:33,717 [INFO] Scheduler started
+2021-07-28 19:38:34,697 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:38:36,458 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 150, in plot_table_nosso
+    df2_row.append(str(dataFrame[item]))
+KeyError: '09:00:00'
+2021-07-28 19:39:07,489 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:39:07,490 [INFO] Scheduler has been shut down
+2021-07-28 19:39:20,770 [INFO] Scheduler started
+2021-07-28 19:39:21,661 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:39:55,278 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:39:55,279 [INFO] Scheduler has been shut down
+2021-07-28 19:40:04,881 [INFO] Scheduler started
+2021-07-28 19:40:05,704 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:40:10,890 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 165, in plot_table_nosso
+    tab = ax.table(cellText=dataFrame, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 741, in table
+    cols = len(cellText[0])
+KeyError: 0
+2021-07-28 19:41:12,122 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:41:12,122 [INFO] Scheduler has been shut down
+2021-07-28 19:41:13,350 [WARNING] Exiting immediately!
+2021-07-28 19:41:16,243 [INFO] Scheduler started
+2021-07-28 19:41:17,128 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:41:19,210 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 165, in plot_table_nosso
+    tab = ax.table(cellText=df2, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 773, in table
+    raise ValueError("'rowLabels' must be of length {0}".format(rows))
+ValueError: 'rowLabels' must be of length 3
+2021-07-28 19:42:46,784 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:42:46,784 [INFO] Scheduler has been shut down
+2021-07-28 19:42:55,114 [INFO] Scheduler started
+2021-07-28 19:42:56,008 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:47:46,398 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:47:46,398 [INFO] Scheduler has been shut down
+2021-07-28 19:47:56,162 [INFO] Scheduler started
+2021-07-28 19:47:57,033 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:48:02,039 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 142, in plot_table_nosso
+    dataFrame[diasDisponiveisPessoa["dia"]][horaDisponivel] += 1
+KeyError: 'SEG'
+2021-07-28 19:49:14,142 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:49:14,143 [INFO] Scheduler has been shut down
+2021-07-28 19:49:20,905 [WARNING] Exiting immediately!
+2021-07-28 19:49:25,435 [INFO] Scheduler started
+2021-07-28 19:49:26,331 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:49:28,283 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 142, in plot_table_nosso
+    dataFrame[horaDisponivel][diasDisponiveisPessoa["dia"]] += 1
+KeyError: '12:00:00'
+2021-07-28 19:50:03,987 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:50:03,987 [INFO] Scheduler has been shut down
+2021-07-28 19:50:06,382 [WARNING] Exiting immediately!
+2021-07-28 19:50:10,784 [INFO] Scheduler started
+2021-07-28 19:50:11,612 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:50:15,130 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 142, in plot_table_nosso
+    dataFrame[horaDisponivel][diasDisponiveisPessoa["dia"]] += 1
+KeyError: '12:00:00'
+2021-07-28 19:50:23,097 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:50:23,097 [INFO] Scheduler has been shut down
+2021-07-28 19:50:23,247 [WARNING] Exiting immediately!
+2021-07-28 19:50:28,584 [INFO] Scheduler started
+2021-07-28 19:50:29,466 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:50:34,627 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 142, in plot_table_nosso
+    dataFrame[horaDisponivel][diasDisponiveisPessoa["dia"]] += 1
+KeyError: '12:00:00'
+2021-07-28 19:51:04,927 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:51:04,927 [INFO] Scheduler has been shut down
+2021-07-28 19:51:05,093 [WARNING] Exiting immediately!
+2021-07-28 19:51:07,519 [INFO] Scheduler started
+2021-07-28 19:51:08,347 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:51:10,908 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 170, in plot_table_nosso
+    tab = ax.table(cellText=df2, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/matplotlib/table.py", line 773, in table
+    raise ValueError("'rowLabels' must be of length {0}".format(rows))
+ValueError: 'rowLabels' must be of length 1
+2021-07-28 19:51:24,473 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:51:24,474 [INFO] Scheduler has been shut down
+2021-07-28 19:51:25,330 [WARNING] Exiting immediately!
+2021-07-28 19:51:27,860 [INFO] Scheduler started
+2021-07-28 19:51:28,704 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:53:35,349 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:53:35,349 [INFO] Scheduler has been shut down
+2021-07-28 19:53:35,516 [WARNING] Exiting immediately!
+2021-07-28 19:53:38,410 [INFO] Scheduler started
+2021-07-28 19:53:39,292 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:53:49,972 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 142, in plot_table_nosso
+    dataFrame[diasDisponiveisPessoa["dia"]][horaDisponivel] += 1
+KeyError: 'SEG'
+2021-07-28 19:54:27,420 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 19:54:27,421 [INFO] Scheduler has been shut down
+2021-07-28 19:54:28,162 [WARNING] Exiting immediately!
+2021-07-28 19:54:30,955 [INFO] Scheduler started
+2021-07-28 19:54:31,845 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 19:54:37,054 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botPlot/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "006bot.py", line 149, in plot_table_nosso
+    df2.append(dfRow.values())
+AttributeError: 'str' object has no attribute 'values'
