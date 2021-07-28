@@ -669,3 +669,9 @@ KeyError: 'SEG'
 2021-07-28 20:01:58,855 [INFO] =====================BOT version: 0.0.1==============
 2021-07-28 20:02:08,989 [INFO] Received signal 2 (SIGINT), stopping...
 2021-07-28 20:02:08,991 [INFO] Scheduler has been shut down
+2021-07-28 20:04:01,107 [INFO] Scheduler started
+2021-07-28 20:04:01,999 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 20:04:18,398 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 20:04:18,398 [INFO] Scheduler has been shut down
+2021-07-28 20:04:52,015 [INFO] Scheduler started
+2021-07-28 20:04:52,846 [INFO] =====================BOT version: 0.0.1==============

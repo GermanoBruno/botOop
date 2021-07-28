@@ -158,25 +158,30 @@ def plot_table_nosso(update, context):
 
     print(df2)
 
-    
-    
-    
-    # fig, ax = plt.subplots(figsize=(8, 8))
+    numpy_array = np.array(df2)
+    transpose = numpy_array.T
 
-    # # hide axes
-    # fig.patch.set_visible(False)
-    # ax.axis('off')
+    transpose_list = transpose.tolist()
+
+    print(transpose_list)
+    
+    
+    fig, ax = plt.subplots(figsize=(8, 8))
+
+    # hide axes
+    fig.patch.set_visible(False)
+    ax.axis('off')
     
 
-    # tab = ax.table(cellText=df2, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
-    # tab.get_celld()[(1,1)].set_color("#56b5fd")
-    # # [t.auto_set_font_size(False) for t in tab]
-    # # tab.auto_set_column_width(col=)
+    tab = ax.table(cellText=transpose_list, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+    tab.get_celld()[(1,1)].set_color("#56b5fd")
+    # [t.auto_set_font_size(False) for t in tab]
+    # tab.auto_set_column_width(col=)
     
     
-    # # fig.tight_layout()
+    # fig.tight_layout()
 
-    # plt.savefig('graph001.png')
+    plt.savefig('graph001.png')
     _file.close()
  
 
