@@ -3,12 +3,12 @@
  
  	{
 		"emp_name": "google",
-		"hora": ["1:35 PM","2:35 PM", "4:45 PM"],
+		"hora": ["1:35 PM","2:35 PM", "4:45 PM"], // Sera apenas um horario de emlhor match
 		"day": "Monday",
-		"job_profile": "developer",
-		"email": "emanuel@usp.br",
-		"genero": [],
-		"phone": []
+		"job_profile": "developer",  // Assunto da reuniao
+		"email": "emanuel@usp.br", // Email do cara que criou a reuniao para entrar em contato!
+		"genero": [], // seria as pessoas
+		"phone": []	// Seria os telefones de contato de cada pessoa
 	},
 	{
 		"emp_name": "itau",
