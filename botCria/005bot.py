@@ -30,9 +30,6 @@ def plot_01(update, context):
 
 
     user_input = update.message.text.split()[1]
-    
-	#evento = Event()
-	#evento.getFromJson(str(user_input))
 
     idEvento = str(user_input)
     req = requests.get(LINK_URL + "/evento/" + idEvento)
@@ -57,8 +54,6 @@ def plot_01(update, context):
         rows.append(horarioInicial.strftime("%X"))
         horarioInicial += intervalo
         pass
-
-    # print(rows)
 
 
     dataFrame = {}
@@ -137,9 +132,13 @@ def plot_01(update, context):
 def start(update,context):
 	''' /start sentive from the commandHandler
 	'''
+	
+	# /create nome do evento dias nearly nlater
+	# /disponivel id_do_evento Dias horarios disp
+	# /join id_do_evento
 
 	logMessageReceived(update,context,logger)
-	msg = "Bem Vindo ao Agend\n\n\nPara Criar um evento,digite:\n/create <empresa> <horario> <dia_da_semana>\n\nDigite /help, para mais ajuda!"
+	msg = "Bem Vindo ao Agendei\n\n\nPara Criar um evento,digite:\n/create <nome_do_evento> <dias_da_semana> <horario_min> <horario_max>\n\nDigite /help, para mais ajuda!"
 	update.message.reply_text(msg,parse_mode='Markdown')
 	logMessageSent(update,context,logger,"TXT", msg)
 	
@@ -151,49 +150,12 @@ def help(update,context):
 		send a commdn /help
 	'''
 	update.message.reply_text('Did you need some help?')
-	update.message.reply_text('Implementation command:\nA) /start\nB) /week\nC) /freeday\nD) /plot')
+	update.message.reply_text('Implementation commands:')
+	update.message.reply_text('/create <nome_do_evento> <dias_da_semana> <horario_min> <horario_max>')
+	update.message.reply_text('/join <id_do_evento>')
+	update.message.reply_text('/disponivel <id_do_evento> <dias> <horarios>')
+	update.message.reply_text('/plot <id_do_evento>')
 	
-
-def week(update, context):
-
-	_file = open('data01.json')
-	data = json.load(_file)
-
-   # print(type(data)) => this is a dictionary
-   # print(type(data['week'])) => this is a fucking list!
-
-	for x in data['week']:
-		#update.message.reply_text(x)
-
-		if(x['hora'] != None and len(x['hora']) != 0):
-				
-			
-			msg = " ,".join(x['hora'])
-
-			msg2 ="Empresa: " + str(x['emp_name']) + "\nDia: " + str(x['day']) + "\nHorario: " + msg
-			update.message.reply_text(msg2)
-		
-		
-
-
-	_file.close()
-
-
-def freeday(update,context):
-	_file = open('data01.json')
-	data = json.load(_file)
-
-	for x in data['week']:
-	
-		if(x['hora'] == None or len(x['hora']) == 0):
-			msg ="\nDia: " + str(x['day']) + "\nHorario: <VAGO>"
-			
-			update.message.reply_text(msg)
-		
-		
-
-
-	_file.close()
 
 def createEvento(evento):
 	eventJson = evento.createJson()
@@ -209,7 +171,7 @@ def createEvento(evento):
 	return eventJson["id"]
 
 def create(update, context):
-	# /create dias nearly nlater
+	# /create nome do evento dias nearly nlater
 	user_input = update.message.text.split()[1:]
 
 	nlater = str(user_input[-1])
@@ -291,9 +253,6 @@ def main():
 
 	dp.add_handler(CommandHandler('start', start)) #run:: def start
 	dp.add_handler(CommandHandler('help', help))   #run:: def help
-
-	dp.add_handler(CommandHandler('week', week)) #run:: def week
-	dp.add_handler(CommandHandler('freeday', freeday)) #run:: def freeday
 
 	dp.add_handler(CommandHandler('create', create)) #run:: def create
 	
