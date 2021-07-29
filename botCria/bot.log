@@ -550,3 +550,6 @@ TypeError: the JSON object must be str, bytes or bytearray, not list
 2021-07-29 00:31:21,373 [WARNING] Exiting immediately!
 2021-07-29 00:31:40,324 [INFO] Scheduler started
 2021-07-29 00:31:41,200 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:35:15,710 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:35:15,710 [INFO] Scheduler has been shut down
+2021-07-29 00:35:16,846 [WARNING] Exiting immediately!
