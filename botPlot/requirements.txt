@@ -1,5 +1,0 @@
-numpy
-matplotlib
-praw
-requests
-python-telegram-bot
