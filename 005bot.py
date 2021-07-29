@@ -7,6 +7,7 @@ import requests
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 from utils import *
+from classes import *
 
 
 import matplotlib.pyplot as plt
@@ -121,43 +122,75 @@ def plot_01(update, context):
 	update.message.reply_photo(open(img_filename_new,'rb'));
 
 
-
-def createEvento(dias, nearly, nlater):
+def createEvento(evento):
 	dias = [for dia in dias: dia.upper()]
-	nearly = str(nearly) + ':00'
-	nlater = str(nlater) + ':00'
+	nearly = str(nearly)
+	nlater = str(nlater)
+	eventJson = evento.createJson()
 
 	# Request do create aqui
-	#requests.get()
+	req = requests.post(LINK_URL + "/evento", eventJson)
+
+	eventJson = json.loads(req.text)
+	return eventJson["id"]
 
 def create(update, context):
 	# /create dias nearly nlater
 	user_input = update.message.text.split()[1:]
 
-	nlater = user_input[-1]
-	nearly = user_input[-2]
+	nlater = str(user_input[-1])
+	nearly = str(user_input[-2])
 
 	dias = user_input[:-2]
 
 	update.message.reply_text('Evento de ' + str(dias) + ' das ' + nearly + ' as ' + nlater + 'criado!')
+	evento = Event(dias=dias, nantes=nearly, ndepois=nlater)
+	eventId = createEvento(evento)
 
-	createEvento(dias, nearly, nlater)
+	update.message.reply_text('Evento criado! Id do evento: ' + eventId)
+
+
 
 def join(update, context):
 	# /join <id do evento> 
 
 	user_input = update.message.text.split()[1]
-	update.message.reply_text('O id do evento é: ' + user_input)
-    #jsonEvento = getEvento(user_input)
+	user_name = update.message.from_user['username']
+    
+	#evento = Event()
+	#evento.getFromJson(str(user_input))
 
-    # tratar erro
+	userJson = json.dumps({"nome":user_name, "horas": []}, indent =4)
 
-    # Pegar horarios dos dias do evento
-    for dia in dias:
-    	update.message.reply_text('Horarios da ' + dia)
-    	# get horarios do input
+	req = requests.post(LINK_URL + "/evento/" + id + "/InserePessoa", userJson)
 
-	# updateEvento() com a entrada do usuario
+	#eventJson = evento.createJson()
+
+	update.message.reply_text('Entrou no evento de id: ' + user_input)
+	#req = requests.put(LINK_URL + "/evento/" + id, eventJson)
+	# updateEvento() com o usuario
+
+
+def disponivel(update, context):
+	# /disponivel DIA horarios
+
+	user_input = update.message.text.split()[1:]
+	user_name = update.message.from_user['username']
+
+	dia = str(user_input[0])
+	horarios = user_input[1:]
+	
+	req = requests.get(LINK_URL + "/evento/" + id + "/" + user_name, userJson)
+	userJson = json.loads(req.text)
+	userJson["horas_disponiveis"].append({"dia":dia, "horarios":horarios})
+
+	userJson = json.dumps(userJson, indent =4)
+
+	req = requests.put(LINK_URL + "/evento/" + id + "/" + user_name, userJson)
+
+
+	update.message.reply_text("Dia cadastrado")
+	
 
 	
 
@@ -173,8 +206,10 @@ def main():
 	dp.add_handler(CommandHandler('week', week)); #run:: def week
 	dp.add_handler(CommandHandler('freeday', freeday)); #run:: def freeday
 
-	dp.add_handler(CommandHandler('join', join)); #run:: def join
 	dp.add_handler(CommandHandler('create', create)); #run:: def create
+	
+	dp.add_handler(CommandHandler('join', join)); #run:: def join
+	dp.add_handler(CommandHandler('disponivel', disponivel)); #run:: def disponivel
 
 	dp.add_handler(CommandHandler('plot',plot_01));#run :: def plot_01
 
