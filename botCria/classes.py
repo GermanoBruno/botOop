@@ -1,4 +1,7 @@
 import requests
+import json
+
+LINK_URL = "http://localhost:8080"
 
 class Event():
 	def __init__(self, eventId='', nome='', dias=[], nantes='', ndepois='', pessoas={}):
@@ -26,7 +29,7 @@ class Event():
 			eventJson = json.loads(req.text)
 		else:
 			# evento não existente
-			return ERROR
+			return None
 
 
 		self.set(

@@ -1,0 +1,6 @@
+numpy
+matplotlib
+requests
+python-telegram-bot
+numpy
+praw

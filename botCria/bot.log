@@ -1,0 +1,552 @@
+2021-07-28 22:14:54,507 [INFO] Scheduler started
+2021-07-28 22:14:55,391 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 22:15:48,643 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 33, in start
+    logMessageReceived(update,context,logger);
+NameError: name 'logMessageReceived' is not defined
+2021-07-28 22:18:53,770 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 22:18:53,770 [INFO] Scheduler has been shut down
+2021-07-28 22:18:55,284 [WARNING] Exiting immediately!
+2021-07-28 22:22:16,402 [INFO] Scheduler started
+2021-07-28 22:22:17,288 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 22:23:01,215 [INFO] RX @Turqueti(130522425) @ PRIV: "/start"
+2021-07-28 22:23:01,969 [INFO] TX @Turqueti(130522425) @ PRIV (TXT): "Bem Vindo ao Agend\n\n\nPara Criar um evento,digite:\n/create <empresa> <horario> <dia_da_semana>\n\nDigite /help, para mais ajuda!"
+2021-07-28 22:26:23,050 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 147, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 126, in createEvento
+    nearly = str(nearly)
+UnboundLocalError: local variable 'nearly' referenced before assignment
+2021-07-28 22:29:51,637 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 147, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 126, in createEvento
+    nearly = str(nearly)
+UnboundLocalError: local variable 'nearly' referenced before assignment
+2021-07-28 22:33:03,734 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 22:33:03,735 [INFO] Scheduler has been shut down
+2021-07-28 22:33:09,064 [INFO] Scheduler started
+2021-07-28 22:33:09,946 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 22:33:40,949 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 148, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 127, in createEvento
+    nearly = str(nearly)
+UnboundLocalError: local variable 'nearly' referenced before assignment
+2021-07-28 22:35:23,446 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 22:35:23,446 [INFO] Scheduler has been shut down
+2021-07-28 22:36:05,665 [INFO] Scheduler started
+2021-07-28 22:36:06,588 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 22:36:24,951 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 146, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 127, in createEvento
+    eventJson = evento.createJson()
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/classes.py", line 51, in createJson
+    eventJson = json.dumps(eventDict, indent=4)
+NameError: name 'json' is not defined
+2021-07-28 22:37:04,604 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 22:37:04,604 [INFO] Scheduler has been shut down
+2021-07-28 22:56:44,237 [INFO] Scheduler started
+2021-07-28 22:56:45,123 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 22:56:57,755 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 147, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 131, in createEvento
+    req = requests.post(LINK_URL + "/evento", eventJson)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/sessions.py", line 649, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/sessions.py", line 742, in get_adapter
+    raise InvalidSchema("No connection adapters were found for {!r}".format(url))
+requests.exceptions.InvalidSchema: No connection adapters were found for '127.0.0.1:8080/evento'
+2021-07-28 22:57:40,919 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 22:57:40,919 [INFO] Scheduler has been shut down
+2021-07-28 22:57:41,285 [WARNING] Exiting immediately!
+2021-07-28 23:01:44,109 [INFO] Scheduler started
+2021-07-28 23:01:44,993 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:01:54,299 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 147, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 134, in createEvento
+    return eventJson["id"]
+KeyError: 'id'
+2021-07-28 23:02:45,291 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:02:45,291 [INFO] Scheduler has been shut down
+2021-07-28 23:02:45,950 [WARNING] Exiting immediately!
+2021-07-28 23:02:48,544 [INFO] Scheduler started
+2021-07-28 23:02:49,513 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:03:12,411 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 148, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 135, in createEvento
+    return eventJson["id"]
+KeyError: 'id'
+2021-07-28 23:05:30,305 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:05:30,306 [INFO] Scheduler has been shut down
+2021-07-28 23:05:33,346 [WARNING] Exiting immediately!
+2021-07-28 23:05:36,249 [INFO] Scheduler started
+2021-07-28 23:05:37,128 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:05:50,618 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 148, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 135, in createEvento
+    return eventJson["id"]
+KeyError: 'id'
+2021-07-28 23:10:42,263 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:10:42,264 [INFO] Scheduler has been shut down
+2021-07-28 23:10:43,002 [WARNING] Exiting immediately!
+2021-07-28 23:10:45,821 [INFO] Scheduler started
+2021-07-28 23:10:46,699 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:11:02,046 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 158, in create
+    update.message.reply_text('Evento criado! Id do evento: ' + eventId)
+TypeError: can only concatenate str (not "int") to str
+2021-07-28 23:12:58,060 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:12:58,061 [INFO] Scheduler has been shut down
+2021-07-28 23:12:58,713 [WARNING] Exiting immediately!
+2021-07-28 23:13:02,453 [INFO] Scheduler started
+2021-07-28 23:13:03,359 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:14:29,478 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:14:29,479 [INFO] Scheduler has been shut down
+2021-07-28 23:14:30,082 [WARNING] Exiting immediately!
+2021-07-28 23:15:46,617 [INFO] Scheduler started
+2021-07-28 23:15:47,499 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:20:28,862 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:20:28,867 [INFO] Scheduler has been shut down
+2021-07-28 23:20:35,375 [WARNING] Exiting immediately!
+2021-07-28 23:20:38,272 [INFO] Scheduler started
+2021-07-28 23:20:39,148 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:23:27,898 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:23:27,899 [INFO] Scheduler has been shut down
+2021-07-28 23:23:48,095 [INFO] Scheduler started
+2021-07-28 23:23:48,971 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:25:12,541 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:25:12,542 [INFO] Scheduler has been shut down
+2021-07-28 23:25:13,377 [WARNING] Exiting immediately!
+2021-07-28 23:25:24,903 [INFO] Scheduler started
+2021-07-28 23:25:25,743 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:26:26,620 [INFO] RX @GermanoBruno(545836951) @ PRIV: "/start"
+2021-07-28 23:26:26,965 [INFO] TX @GermanoBruno(545836951) @ PRIV (TXT): "Bem Vindo ao Agend\n\n\nPara Criar um evento,digite:\n/create <empresa> <horario> <dia_da_semana>\n\nDigite /help, para mais ajuda!"
+2021-07-28 23:28:05,113 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:28:05,113 [INFO] Scheduler has been shut down
+2021-07-28 23:28:07,754 [WARNING] Exiting immediately!
+2021-07-28 23:28:16,348 [INFO] Scheduler started
+2021-07-28 23:28:17,314 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:28:47,330 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:28:47,331 [INFO] Scheduler has been shut down
+2021-07-28 23:28:50,706 [WARNING] Exiting immediately!
+2021-07-28 23:29:08,307 [INFO] Scheduler started
+2021-07-28 23:29:09,138 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:31:29,188 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:31:29,189 [INFO] Scheduler has been shut down
+2021-07-28 23:31:33,921 [WARNING] Exiting immediately!
+2021-07-28 23:31:40,173 [INFO] Scheduler started
+2021-07-28 23:31:41,010 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:32:16,411 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:32:16,411 [INFO] Scheduler has been shut down
+2021-07-28 23:32:17,468 [WARNING] Exiting immediately!
+2021-07-28 23:32:20,449 [INFO] Scheduler started
+2021-07-28 23:32:21,278 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:32:28,084 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 154, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 137, in createEvento
+    return eventJson["id"]
+KeyError: 'id'
+2021-07-28 23:33:50,655 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 154, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 137, in createEvento
+    return eventJson["id"]
+KeyError: 'id'
+2021-07-28 23:34:03,972 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:34:03,974 [INFO] Scheduler has been shut down
+2021-07-28 23:34:04,144 [WARNING] Exiting immediately!
+2021-07-28 23:35:13,579 [INFO] Scheduler started
+2021-07-28 23:35:14,459 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:35:26,451 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 154, in create
+    eventId = createEvento(evento)
+  File "005bot.py", line 137, in createEvento
+    return eventJson["id"]
+KeyError: 'id'
+2021-07-28 23:37:40,558 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:37:40,559 [INFO] Scheduler has been shut down
+2021-07-28 23:37:41,154 [WARNING] Exiting immediately!
+2021-07-28 23:37:43,132 [INFO] Scheduler started
+2021-07-28 23:37:44,005 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:38:27,375 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:38:27,376 [INFO] Scheduler has been shut down
+2021-07-28 23:38:28,418 [WARNING] Exiting immediately!
+2021-07-28 23:38:35,898 [INFO] Scheduler started
+2021-07-28 23:38:36,734 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:39:45,416 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:39:45,416 [INFO] Scheduler has been shut down
+2021-07-28 23:39:46,251 [WARNING] Exiting immediately!
+2021-07-28 23:39:48,305 [INFO] Scheduler started
+2021-07-28 23:39:49,179 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:41:45,123 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:41:45,124 [INFO] Scheduler has been shut down
+2021-07-28 23:41:45,593 [WARNING] Exiting immediately!
+2021-07-28 23:41:48,333 [INFO] Scheduler started
+2021-07-28 23:41:49,176 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:42:16,531 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:42:16,531 [INFO] Scheduler has been shut down
+2021-07-28 23:42:17,015 [WARNING] Exiting immediately!
+2021-07-28 23:42:19,547 [INFO] Scheduler started
+2021-07-28 23:42:20,406 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:48:53,690 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:48:53,690 [INFO] Scheduler has been shut down
+2021-07-28 23:48:54,301 [WARNING] Exiting immediately!
+2021-07-28 23:49:10,335 [INFO] Scheduler started
+2021-07-28 23:49:11,215 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:51:16,332 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 190, in disponivel
+    req = requests.get(LINK_URL + "/evento/" + id + "/" + user_name)
+TypeError: can only concatenate str (not "builtin_function_or_method") to str
+2021-07-28 23:52:05,335 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:52:05,337 [INFO] Scheduler has been shut down
+2021-07-28 23:52:06,118 [WARNING] Exiting immediately!
+2021-07-28 23:52:09,089 [INFO] Scheduler started
+2021-07-28 23:52:09,920 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:52:20,518 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 191, in disponivel
+    req = requests.get(LINK_URL + "/evento/" + id + "/" + user_name)
+TypeError: can only concatenate str (not "builtin_function_or_method") to str
+2021-07-28 23:54:06,193 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:54:06,193 [INFO] Scheduler has been shut down
+2021-07-28 23:54:06,652 [WARNING] Exiting immediately!
+2021-07-28 23:54:08,914 [INFO] Scheduler started
+2021-07-28 23:54:09,761 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:55:21,147 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:55:21,147 [INFO] Scheduler has been shut down
+2021-07-28 23:55:25,266 [INFO] Scheduler started
+2021-07-28 23:55:26,168 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:55:29,889 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 194, in disponivel
+    userJson["horas_disponiveis"].append({"dia":dia, "horarios":horarios})
+KeyError: 'horas_disponiveis'
+2021-07-28 23:56:20,779 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:56:20,779 [INFO] Scheduler has been shut down
+2021-07-28 23:56:24,017 [INFO] Scheduler started
+2021-07-28 23:56:24,859 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:56:27,077 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 194, in disponivel
+    print(userJson["horas_disponiveis"])
+KeyError: 'horas_disponiveis'
+2021-07-28 23:56:48,739 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:56:48,740 [INFO] Scheduler has been shut down
+2021-07-28 23:56:50,829 [WARNING] Exiting immediately!
+2021-07-28 23:58:01,137 [INFO] Scheduler started
+2021-07-28 23:58:01,984 [INFO] =====================BOT version: 0.0.1==============
+2021-07-28 23:58:18,725 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 172, in join
+    req = requests.post(LINK_URL + "/evento/" + id + "/InserePessoa", userJson)
+TypeError: can only concatenate str (not "builtin_function_or_method") to str
+2021-07-28 23:59:06,122 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-28 23:59:06,122 [INFO] Scheduler has been shut down
+2021-07-28 23:59:06,519 [WARNING] Exiting immediately!
+2021-07-28 23:59:09,467 [INFO] Scheduler started
+2021-07-28 23:59:10,329 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:00:42,147 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:00:42,147 [INFO] Scheduler has been shut down
+2021-07-29 00:00:43,286 [WARNING] Exiting immediately!
+2021-07-29 00:00:45,283 [INFO] Scheduler started
+2021-07-29 00:00:46,163 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:01:22,997 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:01:22,997 [INFO] Scheduler has been shut down
+2021-07-29 00:01:23,512 [WARNING] Exiting immediately!
+2021-07-29 00:01:26,407 [INFO] Scheduler started
+2021-07-29 00:01:27,422 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:02:24,329 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:02:24,330 [INFO] Scheduler has been shut down
+2021-07-29 00:02:26,822 [WARNING] Exiting immediately!
+2021-07-29 00:02:29,515 [INFO] Scheduler started
+2021-07-29 00:02:30,356 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:03:08,378 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:03:08,378 [INFO] Scheduler has been shut down
+2021-07-29 00:03:12,203 [WARNING] Exiting immediately!
+2021-07-29 00:03:14,246 [INFO] Scheduler started
+2021-07-29 00:03:15,120 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:03:36,771 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:03:36,772 [INFO] Scheduler has been shut down
+2021-07-29 00:03:37,606 [WARNING] Exiting immediately!
+2021-07-29 00:03:40,325 [INFO] Scheduler started
+2021-07-29 00:03:41,150 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:04:13,752 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:04:13,753 [INFO] Scheduler has been shut down
+2021-07-29 00:04:14,252 [WARNING] Exiting immediately!
+2021-07-29 00:04:16,403 [INFO] Scheduler started
+2021-07-29 00:04:17,278 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:08:15,710 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 198, in disponivel
+    print(userJson["horas_disponiveis"])
+KeyError: 'horas_disponiveis'
+2021-07-29 00:17:05,133 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:17:05,133 [INFO] Scheduler has been shut down
+2021-07-29 00:17:05,608 [WARNING] Exiting immediately!
+2021-07-29 00:17:22,912 [INFO] Scheduler started
+2021-07-29 00:17:23,789 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:17:48,500 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 199, in disponivel
+    userJson["horas_disponiveis"].append({"dia":dia, "horarios":horarios})
+KeyError: 'horas_disponiveis'
+2021-07-29 00:18:22,033 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:18:22,033 [INFO] Scheduler has been shut down
+2021-07-29 00:18:22,182 [WARNING] Exiting immediately!
+2021-07-29 00:18:25,337 [INFO] Scheduler started
+2021-07-29 00:18:26,180 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:18:29,690 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 199, in disponivel
+    userJson["horas_disponiveis"].append({"dia":dia, "horarios":horarios})
+KeyError: 'horas_disponiveis'
+2021-07-29 00:20:42,771 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:20:42,771 [INFO] Scheduler has been shut down
+2021-07-29 00:20:42,952 [WARNING] Exiting immediately!
+2021-07-29 00:20:45,817 [INFO] Scheduler started
+2021-07-29 00:20:46,707 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:20:52,115 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.8/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1007, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 947, in send
+    self.connect()
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f96faf38c10>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /evento/6102172ae54e286254e34346/GermanoBruno (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f96faf38c10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 196, in disponivel
+    req = requests.get(LINK_URL + "/evento/" + idEvento + "/" + user_name)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /evento/6102172ae54e286254e34346/GermanoBruno (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f96faf38c10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2021-07-29 00:21:20,780 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:21:20,781 [INFO] Scheduler has been shut down
+2021-07-29 00:21:20,930 [WARNING] Exiting immediately!
+2021-07-29 00:23:42,536 [INFO] Scheduler started
+2021-07-29 00:23:43,603 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:23:56,598 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 199, in disponivel
+    userJson["horas_disponiveis"].append({"dia":dia, "horarios":horarios})
+AttributeError: 'NoneType' object has no attribute 'append'
+2021-07-29 00:25:18,515 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:25:18,515 [INFO] Scheduler has been shut down
+2021-07-29 00:25:20,582 [INFO] Scheduler started
+2021-07-29 00:25:21,471 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:25:23,824 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 202, in disponivel
+    userJson["horas_disponiveis"].append({"dia":dia, "horarios":horarios})
+TypeError: list indices must be integers or slices, not str
+2021-07-29 00:26:31,834 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:26:31,834 [INFO] Scheduler has been shut down
+2021-07-29 00:26:33,701 [WARNING] Exiting immediately!
+2021-07-29 00:26:36,756 [INFO] Scheduler started
+2021-07-29 00:26:37,613 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:26:41,619 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 202, in disponivel
+    json.loads(userJson)
+  File "/usr/lib/python3.8/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+2021-07-29 00:27:27,077 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:27:27,077 [INFO] Scheduler has been shut down
+2021-07-29 00:27:28,537 [WARNING] Exiting immediately!
+2021-07-29 00:27:30,868 [INFO] Scheduler started
+2021-07-29 00:27:31,718 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:28:37,030 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:28:37,030 [INFO] Scheduler has been shut down
+2021-07-29 00:28:37,865 [WARNING] Exiting immediately!
+2021-07-29 00:28:39,542 [INFO] Scheduler started
+2021-07-29 00:28:40,373 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:29:43,589 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:29:43,589 [INFO] Scheduler has been shut down
+2021-07-29 00:29:44,264 [WARNING] Exiting immediately!
+2021-07-29 00:29:53,011 [INFO] Scheduler started
+2021-07-29 00:29:53,890 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:30:45,831 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:30:45,832 [INFO] Scheduler has been shut down
+2021-07-29 00:30:45,989 [WARNING] Exiting immediately!
+2021-07-29 00:30:48,090 [INFO] Scheduler started
+2021-07-29 00:30:48,989 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:31:20,881 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:31:20,881 [INFO] Scheduler has been shut down
+2021-07-29 00:31:21,373 [WARNING] Exiting immediately!
+2021-07-29 00:31:40,324 [INFO] Scheduler started
+2021-07-29 00:31:41,200 [INFO] =====================BOT version: 0.0.1==============
