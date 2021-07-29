@@ -82,6 +82,3 @@ class HorasDisponiveis():
 	def set(self, dia, horarios):
 		self.dia = dia
 		self.horarios = horarios
-
-
-print(Pessoa("rubens", ["13:00:00", "14:00:00"]))
