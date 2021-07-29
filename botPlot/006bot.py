@@ -109,8 +109,7 @@ def plot_table_nosso(update, context):
     horarioFinal = datetime.datetime(2000,1,1,hour=int(data['nao_depois'].split(":")[0]),minute=int(data['nao_depois'].split(":")[1]))
 
     intervalo = datetime.timedelta(minutes=15)
-    
-    # print(horarioInicial)
+
 
 
     while horarioInicial <= horarioFinal:
@@ -125,7 +124,7 @@ def plot_table_nosso(update, context):
     datarow = {}
 
 
-    pessoas = data["pessoas"]
+    
 
    
 
@@ -135,14 +134,15 @@ def plot_table_nosso(update, context):
         dataFrame[colum] = datarow
         datarow = {}
 
-    print(dataFrame)
 
+
+
+    pessoas = data["pessoas"]
     for pessoa in pessoas:
         for diasDisponiveisPessoa in pessoa["horas_dosponiveis"]:
             for horaDisponivel in  diasDisponiveisPessoa["horarios"]:
                 dataFrame[diasDisponiveisPessoa["dia"]][horaDisponivel] += 1
 
-    print(dataFrame)
 
     
     df2 = []
@@ -156,14 +156,13 @@ def plot_table_nosso(update, context):
         df2.append(df2_row)
         df2_row = []
 
-    print(df2)
+
 
     numpy_array = np.array(df2)
     transpose = numpy_array.T
 
     transpose_list = transpose.tolist()
 
-    print(transpose_list)
     
     
     fig, ax = plt.subplots(figsize=(8, 8))
@@ -174,14 +173,18 @@ def plot_table_nosso(update, context):
     
 
     tab = ax.table(cellText=transpose_list, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
-    tab.get_celld()[(1,1)].set_color("#56b5fd")
-    # [t.auto_set_font_size(False) for t in tab]
-    # tab.auto_set_column_width(col=)
     
+    colors =  plt.cm.BuPu(np.linspace(0, 0.5, len(pessoas)+1))
+
     
-    # fig.tight_layout()
+    for i in range(len(rows)):
+        for j in range(len(columns)):
+            tab.get_celld()[(i+1,j)].set_color(colors[int(transpose_list[i][j])])
+    
 
     plt.savefig('graph001.png')
+    img_filename_new = 'graph001.png'
+    update.message.reply_photo(open(img_filename_new,'rb'))
     _file.close()
  
 
@@ -276,9 +279,9 @@ def main():
     dp = updater.dispatcher
 
 
-    dp.add_handler(CommandHandler('start', start)) #run:: def start
-    dp.add_handler(CommandHandler('help', help))   #run:: def help
-    dp.add_handler(CommandHandler('week', week)) #run:: def week
+    # dp.add_handler(CommandHandler('start', start)) #run:: def start
+    # dp.add_handler(CommandHandler('help', help))   #run:: def help
+    # dp.add_handler(CommandHandler('week', week)) #run:: def week
     dp.add_handler(CommandHandler('plot',plot_table_nosso))#run :: def plot_01
 
     updater.start_polling()
