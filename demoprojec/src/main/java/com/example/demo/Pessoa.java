@@ -10,5 +10,5 @@ import java.util.List;
 @AllArgsConstructor
 class Pessoa {
         String nome ;
-        List<DataDisponivel> horas_dosponiveis;
+        List<DataDisponivel> horas_disponiveis;
 }

@@ -49,21 +49,25 @@ public class EventoController {
 
             for (int i = 0; i < pessoas.size();i++){
                 if (pessoa.getNome().equals(pessoas.get(i).getNome())){
-                    throw new Exception("Pessoa ja adicionada");
+                    throw new Exception("Pessoa ja foi inserida");
                 }
             }
 
-            for (int i = 0; i < pessoa.getHoras_dosponiveis().size();i++){
-                if (! event.getDias_da_semana().contains(pessoa.getHoras_dosponiveis().get(i).getDia())){
+            for (int k = 0; k < pessoa.getHoras_disponiveis().size();k++){
+                if (! event.getDias_da_semana().contains(pessoa.getHoras_disponiveis().get(k).getDia())){
                     throw new Exception("Dia da semana inválido");
                 }
-                for (int j = 0; j < pessoa.getHoras_dosponiveis().get(i).getHorarios().size();j++){
-                    if (pessoa.getHoras_dosponiveis().get(i).getHorarios().get(j).compareTo(event.getNao_antes()) < 0 || pessoa.getHoras_dosponiveis().get(i).getHorarios().get(j).compareTo(event.getNao_depois()) > 0){
+                for (int j = 0; j < pessoa.getHoras_disponiveis().get(k).getHorarios().size();j++){
+                    if (pessoa.getHoras_disponiveis().get(k).getHorarios().get(j).compareTo(event.getNao_antes()) < 0 || pessoa.getHoras_disponiveis().get(k).getHorarios().get(j).compareTo(event.getNao_depois()) > 0){
                         throw new Exception("Horario inválido");
                     }
                 }
 
             }
+            pessoas.add(pessoa);
+
+
+            event.setPessoas(pessoas);
 
             return repo.save(event);
         }else{
@@ -82,12 +86,12 @@ public class EventoController {
 
             for (int i = 0; i < pessoas.size();i++){
                 if (nomePessoa.equals(pessoas.get(i).getNome())){
-                    for (int k = 0; k < pessoa.getHoras_dosponiveis().size();k++){
-                        if (! event.getDias_da_semana().contains(pessoa.getHoras_dosponiveis().get(k).getDia())){
+                    for (int k = 0; k < pessoa.getHoras_disponiveis().size();k++){
+                        if (! event.getDias_da_semana().contains(pessoa.getHoras_disponiveis().get(k).getDia())){
                             throw new Exception("Dia da semana inválido");
                         }
-                        for (int j = 0; j < pessoa.getHoras_dosponiveis().get(k).getHorarios().size();j++){
-                            if (pessoa.getHoras_dosponiveis().get(k).getHorarios().get(j).compareTo(event.getNao_antes()) < 0 || pessoa.getHoras_dosponiveis().get(k).getHorarios().get(j).compareTo(event.getNao_depois()) > 0){
+                        for (int j = 0; j < pessoa.getHoras_disponiveis().get(k).getHorarios().size();j++){
+                            if (pessoa.getHoras_disponiveis().get(k).getHorarios().get(j).compareTo(event.getNao_antes()) < 0 || pessoa.getHoras_disponiveis().get(k).getHorarios().get(j).compareTo(event.getNao_depois()) > 0){
                                 throw new Exception("Horario inválido");
                             }
                         }
