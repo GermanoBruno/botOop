@@ -12,6 +12,7 @@ from classes import *
 
 import matplotlib.pyplot as plt
 import numpy as np
+import datetime
 
 LINK_URL = "http://localhost:8080"
 
@@ -23,6 +24,111 @@ LINK_URL = "http://localhost:8080"
 
 
 logger = logging.getLogger(__name__)
+
+
+def plot_01(update, context):
+
+
+    user_input = update.message.text.split()[1]
+    
+	#evento = Event()
+	#evento.getFromJson(str(user_input))
+
+    idEvento = str(user_input)
+    req = requests.get(LINK_URL + "/evento/" + idEvento)
+    print(req)
+    print(req.text)
+    data = json.loads(req.text)
+    
+    # print(data)
+
+    columns = data['dias_da_semana']
+    rows = []
+
+
+    horarioInicial = datetime.datetime(2000,1,1,hour=int(data['nao_antes'].split(":")[0]),minute=int(data['nao_antes'].split(":")[1]))
+    horarioFinal = datetime.datetime(2000,1,1,hour=int(data['nao_depois'].split(":")[0]),minute=int(data['nao_depois'].split(":")[1]))
+
+    intervalo = datetime.timedelta(minutes=15)
+
+
+
+    while horarioInicial <= horarioFinal:
+        rows.append(horarioInicial.strftime("%X"))
+        horarioInicial += intervalo
+        pass
+
+    # print(rows)
+
+
+    dataFrame = {}
+    datarow = {}
+
+
+    
+
+   
+
+    for colum in columns:
+        for row in rows:
+            datarow[row] = 0
+        dataFrame[colum] = datarow
+        datarow = {}
+
+
+
+
+    pessoas = data["pessoas"]
+    for pessoa in pessoas:
+        for diasDisponiveisPessoa in pessoa["horas_disponiveis"]:
+            for horaDisponivel in  diasDisponiveisPessoa["horarios"]:
+                dataFrame[diasDisponiveisPessoa["dia"]][horaDisponivel] += 1
+
+
+    
+    df2 = []
+    df2_row = []
+
+
+
+    for dfRow in dataFrame:
+        for item in dataFrame[dfRow]:
+            df2_row.append(str(dataFrame[dfRow][item]))
+        df2.append(df2_row)
+        df2_row = []
+
+
+
+    numpy_array = np.array(df2)
+    transpose = numpy_array.T
+
+    transpose_list = transpose.tolist()
+
+    
+    
+    fig, ax = plt.subplots(figsize=(8, 8))
+
+    # hide axes
+    fig.patch.set_visible(False)
+    ax.axis('off')
+    
+
+    tab = ax.table(cellText=transpose_list, rowLabels=rows, colLabels=columns, loc='center',cellLoc="center")
+    
+    colors =  plt.cm.BuPu(np.linspace(0, 0.5, len(pessoas)+1))
+
+    
+    for i in range(len(rows)):
+        for j in range(len(columns)):
+            tab.get_celld()[(i+1,j)].set_color(colors[int(transpose_list[i][j])])
+    
+
+    plt.savefig('graph001.png')
+    img_filename_new = 'graph001.png'
+    update.message.reply_photo(open(img_filename_new,'rb'))
+ 
+
+    pass
 
 
 
@@ -88,41 +194,6 @@ def freeday(update,context):
 
 
 	_file.close()
-
-
-def plot_01(update, context):
-		
-	height = []
-
-	_file = open('data01.json')
-	data = json.load(_file)
-	for x in data['week']:
-		if(x['hora'] != None):
-			height.append(len(x['hora'])*10)
-		else:
-			height.append(0)
-
-	_file.close()
-	
-	#print(height)
-
-	bars = ('Mon','Tues','Wed','Thurs','Fri','Sat')
-	x_pos = np.arange(len(bars))
-
-	plt.bar(x_pos,height)
-
-	plt.yticks(np.arange(0,110,10))
-	
-	plt.xticks(x_pos,bars)
-	plt.ylabel("%")
-	plt.xlabel("Week")
-	
-	
-	plt.savefig('mgraph.png')
-
-	img_filename_new = 'mgraph.png'
-	update.message.reply_photo(open(img_filename_new,'rb'))
-
 
 def createEvento(evento):
 	eventJson = evento.createJson()

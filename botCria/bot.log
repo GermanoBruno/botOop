@@ -553,3 +553,65 @@ TypeError: the JSON object must be str, bytes or bytearray, not list
 2021-07-29 00:35:15,710 [INFO] Received signal 2 (SIGINT), stopping...
 2021-07-29 00:35:15,710 [INFO] Scheduler has been shut down
 2021-07-29 00:35:16,846 [WARNING] Exiting immediately!
+2021-07-29 00:55:59,549 [INFO] Scheduler started
+2021-07-29 00:56:00,409 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:56:18,866 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 201, in plot_01
+    _file = open('data01.json')
+FileNotFoundError: [Errno 2] No such file or directory: 'data01.json'
+2021-07-29 00:57:04,154 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:57:04,154 [INFO] Scheduler has been shut down
+2021-07-29 00:57:04,798 [WARNING] Exiting immediately!
+2021-07-29 00:57:06,891 [INFO] Scheduler started
+2021-07-29 00:57:07,832 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:57:09,025 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 39, in plot_01
+    data = json.load(req.text)
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+2021-07-29 00:58:39,346 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:58:39,347 [INFO] Scheduler has been shut down
+2021-07-29 00:58:40,222 [WARNING] Exiting immediately!
+2021-07-29 00:58:42,518 [INFO] Scheduler started
+2021-07-29 00:58:43,368 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:58:44,281 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 41, in plot_01
+    data = json.load(req.text)
+  File "/usr/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+AttributeError: 'str' object has no attribute 'read'
+2021-07-29 00:59:19,954 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:59:19,954 [INFO] Scheduler has been shut down
+2021-07-29 00:59:20,630 [WARNING] Exiting immediately!
+2021-07-29 00:59:22,807 [INFO] Scheduler started
+2021-07-29 00:59:23,641 [INFO] =====================BOT version: 0.0.1==============
+2021-07-29 00:59:25,459 [ERROR] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/turqueti/Documents/facul/2021.1/POO/botOop/botCria/venv/lib/python3.8/site-packages/telegram/ext/handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "005bot.py", line 83, in plot_01
+    for diasDisponiveisPessoa in pessoa["horas_dosponiveis"]:
+KeyError: 'horas_dosponiveis'
+2021-07-29 00:59:45,930 [INFO] Received signal 2 (SIGINT), stopping...
+2021-07-29 00:59:45,931 [INFO] Scheduler has been shut down
+2021-07-29 00:59:46,669 [WARNING] Exiting immediately!
+2021-07-29 00:59:48,455 [INFO] Scheduler started
+2021-07-29 00:59:49,290 [INFO] =====================BOT version: 0.0.1==============
