@@ -268,7 +268,74 @@ def plot_under(update, context):
     _file.close()
 
 
+def createEvento(evento):
+    dias = [for dia in dias: dia.upper()]
+    nearly = str(nearly)
+    nlater = str(nlater)
+    eventJson = evento.createJson()
 
+    # Request do create aqui
+    req = requests.post(LINK_URL + "/evento", eventJson)
+
+    eventJson = json.loads(req.text)
+    return eventJson["id"]
+
+def create(update, context):
+    # /create dias nearly nlater
+    user_input = update.message.text.split()[1:]
+
+    nlater = str(user_input[-1])
+    nearly = str(user_input[-2])
+
+    dias = user_input[:-2]
+
+    update.message.reply_text('Evento de ' + str(dias) + ' das ' + nearly + ' as ' + nlater + 'criado!')
+    evento = Event(dias=dias, nantes=nearly, ndepois=nlater)
+    eventId = createEvento(evento)
+
+    update.message.reply_text('Evento criado! Id do evento: ' + eventId)
+
+
+
+def join(update, context):
+    # /join <id do evento> 
+
+    user_input = update.message.text.split()[1]
+    user_name = update.message.from_user['username']
+    
+    #evento = Event()
+    #evento.getFromJson(str(user_input))
+
+    userJson = json.dumps({"nome":user_name, "horas": []}, indent =4)
+
+    req = requests.post(LINK_URL + "/evento/" + id + "/InserePessoa", userJson)
+
+    #eventJson = evento.createJson()
+
+    update.message.reply_text('Entrou no evento de id: ' + user_input)
+    #req = requests.put(LINK_URL + "/evento/" + id, eventJson)
+    # updateEvento() com o usuario
+
+
+def disponivel(update, context):
+    # /disponivel DIA horarios
+
+    user_input = update.message.text.split()[1:]
+    user_name = update.message.from_user['username']
+
+    dia = str(user_input[0])
+    horarios = user_input[1:]
+    
+    req = requests.get(LINK_URL + "/evento/" + id + "/" + user_name, userJson)
+    userJson = json.loads(req.text)
+    userJson["horas_disponiveis"].append({"dia":dia, "horarios":horarios})
+
+    userJson = json.dumps(userJson, indent =4)
+
+    req = requests.put(LINK_URL + "/evento/" + id + "/" + user_name, userJson)
+
+
+    update.message.reply_text("Dia cadastrado")
 
 
 
@@ -282,6 +349,11 @@ def main():
     # dp.add_handler(CommandHandler('start', start)) #run:: def start
     # dp.add_handler(CommandHandler('help', help))   #run:: def help
     # dp.add_handler(CommandHandler('week', week)) #run:: def week
+    dp.add_handler(CommandHandler('create', create)); #run:: def create
+    
+    dp.add_handler(CommandHandler('join', join)); #run:: def join
+    dp.add_handler(CommandHandler('disponivel', disponivel)); #run:: def disponivel
+    
     dp.add_handler(CommandHandler('plot',plot_table_nosso))#run :: def plot_01
 
     updater.start_polling()
